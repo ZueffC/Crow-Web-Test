@@ -1,0 +1,41 @@
+<style>
+	.hero {
+	    /* Sizing */
+	    width: 100%;
+	    height: 94vh;
+	    
+	    /* Flexbox stuff */
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+
+        background: url("/static/imgs/hero-main.svg") no-repeat;
+        background-size: cover;
+        color: wheat;
+	}
+
+	.break {
+		flex-basis: 100%;
+		height: 0;
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
+	html {
+		height: 100%;
+        width: 100%;
+	}
+</style>
+
+<section class="hero">
+    <div class="hero-inner">
+    	<center>
+	        <h1>Hello, web-dev world!</h1>
+	        <h5>This site was built with C++ by using Crow web framework.</h2>
+                <p>Now, it`s serving on <span class="code">{{os_name}}</span>.</p>
+        </center>
+    </div>
+</section>
