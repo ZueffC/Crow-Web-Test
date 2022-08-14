@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/static/css/halfmoon.min.css">
+  	<script src="/static/js/halfmoon.min.js"></script>
+	<title>Create blog post</title>
+</head>
+<body>
+	{{> header.html}}
+
+	<br />
+
+	<form action="/create-post" method="post" class="container p-10"> 
+	  <!-- Input author name -->
+	  <div class="form-group">
+	    <label for="author" class="required">Author name</label>
+	    <input type="text" class="form-control" name="author" placeholder="Author name" required="required">
+	  </div>
+
+	  <!-- Input post title -->
+	  <div class="form-group">
+	    <label for="title" class="required">Post title</label>
+	    <input type="text" class="form-control" name="title" placeholder="Post title" required="required">
+	  </div>
+
+	  <!-- Textarea with main text of blog -->
+	  <div class="form-group">
+	    <label for="text" class="required">Post text</label>
+	    <textarea class="form-control" name="text" placeholder="Write a looong text, and we`lnt read. TL;DR"></textarea>
+	  </div>
+
+	  <!-- Submit button -->
+	  <input class="btn btn-primary w-full" type="submit" value="Send!">
+	</form>
+
+</body>
+</html>
